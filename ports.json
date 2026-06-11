@@ -1,0 +1,31 @@
+{
+  "organ": "organ-fire-window-gates-v2",
+  "source_module": "discovery-engine app/services/fire_window_gates.py",
+  "entry_point": "decide(state, context) -> {output, rationale, self_metric}",
+  "pure": true,
+  "deterministic": true,
+  "stdlib_only": true,
+  "input_ports": {
+    "state.recent_evaluations": "list of {all_valid: bool} — newest-first irrelevant (Stage A streak)",
+    "state.stage_a_min_clean_fires": "optional int threshold override (default 3)",
+    "state.stage_b_checks": "{b1..b5: bool} — blocker resolutions",
+    "state.phase_2_checks": "{p2_1..p2_4: bool} — Phase 2 unlock conditions",
+    "state.phase_3_checks": "{godmode_exists, godmode_has_standing_directive, godmode_execution_target_is_local_cron, godmode_role_is_set, dream_team_seeded: bool}",
+    "context.stage_a_min_clean_fires": "optional threshold fallback (state wins)"
+  },
+  "output_ports": {
+    "output.stage_a_complete": "bool",
+    "output.stage_b_complete": "bool",
+    "output.phase_2_unlocked": "bool",
+    "output.phase_3_complete": "bool",
+    "output.godmode_healthy": "bool",
+    "output.current_stage": "first incomplete gate name, or 'complete'",
+    "output.blockers": "list of frontier gate's failing checks",
+    "output.next_actions": "list of advisory next steps",
+    "self_metric.confidence": "fraction of the 4 evidence sections supplied (0.0-1.0)"
+  },
+  "_checked": {
+    "corpus_checked": "2026-06-11",
+    "oss_checked": "2026-06-11"
+  }
+}
