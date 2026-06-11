@@ -1,0 +1,12 @@
+{
+  "_description": "Platform in Stage A — one dirty fire breaks the clean streak, so no gate is open yet.",
+  "state": {
+    "recent_evaluations": [
+      {"all_valid": true},
+      {"all_valid": true},
+      {"all_valid": false}
+    ],
+    "stage_a_min_clean_fires": 3
+  },
+  "context": {}
+}

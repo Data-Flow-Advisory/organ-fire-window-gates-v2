@@ -1,0 +1,21 @@
+{
+  "_description": "Every gate open — Stage A streak clean, B1-B5 resolved, P2-1..P2-4 hold, Godmode healthy, dream team seeded. Loop fully unlocked.",
+  "state": {
+    "recent_evaluations": [
+      {"all_valid": true},
+      {"all_valid": true},
+      {"all_valid": true}
+    ],
+    "stage_a_min_clean_fires": 3,
+    "stage_b_checks": {"b1": true, "b2": true, "b3": true, "b4": true, "b5": true},
+    "phase_2_checks": {"p2_1": true, "p2_2": true, "p2_3": true, "p2_4": true},
+    "phase_3_checks": {
+      "godmode_exists": true,
+      "godmode_has_standing_directive": true,
+      "godmode_execution_target_is_local_cron": true,
+      "godmode_role_is_set": true,
+      "dream_team_seeded": true
+    }
+  },
+  "context": {}
+}

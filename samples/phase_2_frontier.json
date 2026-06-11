@@ -1,0 +1,21 @@
+{
+  "_description": "Stage A + Stage B complete; Phase 2 is the frontier with P2-3 and P2-4 still failing.",
+  "state": {
+    "recent_evaluations": [
+      {"all_valid": true},
+      {"all_valid": true},
+      {"all_valid": true}
+    ],
+    "stage_a_min_clean_fires": 3,
+    "stage_b_checks": {"b1": true, "b2": true, "b3": true, "b4": true, "b5": true},
+    "phase_2_checks": {"p2_1": true, "p2_2": true, "p2_3": false, "p2_4": false},
+    "phase_3_checks": {
+      "godmode_exists": false,
+      "godmode_has_standing_directive": false,
+      "godmode_execution_target_is_local_cron": false,
+      "godmode_role_is_set": false,
+      "dream_team_seeded": false
+    }
+  },
+  "context": {}
+}
